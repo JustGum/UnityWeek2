@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac20c39cf83cfb6468a4eb544f00f8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Number: 0
+  CoinAmount: 0
 --- !u!4 &75680602
 Transform:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 301672709}
   m_Layer: 0
   m_Name: Coin (1)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,7 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationCoinSpeed: 300
-  PlayerTransform: {fileID: 0}
 --- !u!136 &301672710
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -675,7 +674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &482497586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,7 +751,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1813250855}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1006651597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -774,7 +773,7 @@ GameObject:
   - component: {fileID: 506541040}
   m_Layer: 0
   m_Name: Coin (2)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -792,7 +791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationCoinSpeed: 300
-  PlayerTransform: {fileID: 0}
 --- !u!136 &506541041
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1168,7 +1166,7 @@ GameObject:
   - component: {fileID: 923093837}
   m_Layer: 0
   m_Name: Coin (3)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1186,7 +1184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationCoinSpeed: 300
-  PlayerTransform: {fileID: 0}
 --- !u!136 &923093838
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1278,6 +1275,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1006651595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006651597}
+  - component: {fileID: 1006651596}
+  m_Layer: 0
+  m_Name: WinPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1006651596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006651595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb74bbed6e65f7d4a97276a3199d205e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1006651597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006651595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3381162, y: 3.7753754, z: 3.2955613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 482497589}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085836136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1444,7 @@ GameObject:
   - component: {fileID: 1168885412}
   m_Layer: 0
   m_Name: Coin (4)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1420,7 +1462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationCoinSpeed: 300
-  PlayerTransform: {fileID: 0}
 --- !u!136 &1168885413
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2169,7 +2210,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u0423\u0440\u0430! \u0412\u044B \u0441\u043E\u0431\u0440\u0430\u043B\u0438
+    \u0432\u0441\u0435 \u043C\u043E\u043D\u0435\u0442\u043A\u0438!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2450,7 +2492,7 @@ GameObject:
   - component: {fileID: 2103999104}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2468,7 +2510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationCoinSpeed: 300
-  PlayerTransform: {fileID: 0}
 --- !u!136 &2103999105
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2574,5 +2615,5 @@ SceneRoots:
   - {fileID: 923093841}
   - {fileID: 1168885416}
   - {fileID: 75680602}
-  - {fileID: 482497589}
   - {fileID: 2059033240}
+  - {fileID: 1006651597}
